@@ -1,0 +1,878 @@
+<resources>
+	<string name="app_name">ZenControl™</string>
+	<string name="drawer_open">Menu opened</string>
+	<string name="drawer_close">Menu closed</string>
+	<string name="action_settings">Settings</string>
+	<string-array name="nav_drawer_items">
+		<item>SystemUI Mods</item>
+		<item>Dropdown Mods</item>
+		<item>Framework and General</item>
+		<item>Tweak and Mods</item>
+		<item>Useful Apps</item>
+		<item>Set Theme</item>
+		<item>About</item>
+	</string-array>
+	<string name="dialog_color_picker">Color Picker</string>
+	<string name="press_color_to_apply">Press on Color to apply</string>
+	<string-array name="theme_items">
+		<item>Dark theme</item>
+		<item>Light theme</item>
+	</string-array>
+	<string name="missing_su">Your device is either not rooted or the app was denied root permissions.\n\nPlease check your root/su status and try again later.</string>
+	<string name="exit">Exit App</string>
+	<string name="gaining_root">Acquiring root access. Please wait...</string>
+	<string name="missing_su_title">Could not get root access</string>
+
+	<!-- Backup & Restore -->
+	<string-array name="backup_items">
+		<item>Backup</item>
+		<item>Restore</item>
+	</string-array>
+	<string name="confirm_restore">Restore settings?</string>
+	<string name="backup_dialog_title">Backup Settings</string>
+	<string name="confirm_backup">Sure to Backup?</string>
+	<string name="restore_next_boot">Restore On Next Boot</string>
+	<string name="later">Later</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+
+	<string name="reboot">Reboot devices?</string>
+	<string name="reboot_hot">Fast Reboot devices?</string>
+	<string name="reboot_reco">Reboot Recovery?</string>
+	<string name="reboot_bl">Reboot Bootloader?</string>
+	<string name="reboot_ui">Kill SystemUI?</string>
+	<string name="show">Show</string>
+	<string name="hide">Hide</string>
+	<string name="enable">Enable</string>
+	<string name="disable">Disable</string>
+	<string name="lc_please_wait">Please wait&#8230;</string>
+	<string name="dont_show">"Don't show"</string>
+	<string name="right">Right</string>
+	<string name="left">Left</string>
+	<string name="center">Center</string>
+
+	<!-- ImagePicker -->
+	<string name="imgpick_dialog_title">Pick image using</string>
+	<string name="imgpick_choose_error">Error while choosing image</string>
+	<string name="imgpick_crop_error">Error while cropping image</string>
+
+
+	<string name="statusbar_clock_title">Clock</string>
+	<string name="statusbar_clock_summary">Statusbar Clock Options</string>
+	<string name="statusbar_clock_style_title">Clock Style</string>
+	<string name="statusbar_clock_style_summary">Choose centre,right or none</string>
+	<string name="statusbar_clock_ampm_title">AM/PM style</string>
+	<string name="statusbar_clock_ampm_summary">Add AM or PM to statusbar clock</string>
+	<string name="statusbar_clock_type_title">Date Type</string>
+	<string name="statusbar_clock_type_summary">Abbreviated day of the week in statusbar</string>
+	<string name="statusbar_clock_date_style_title">Date Style</string>
+	<string name="statusbar_clock_date_format_title">Date Format</string>
+	<string name="statusbar_clock_date_custom_title">Date Custom Format</string>
+	<string name="statusbar_clock_date_custom_summary">Edit Date Format</string>
+	<string name="statusbar_clock_date_formatted_title">Enter Date Format</string>
+	<string name="statusbar_clock_second_title">Clock Seconds</string>
+	<string name="statusbar_clock_second_summary">Choose if show seconds</string>
+	<string name="statusbar_clock_color_title">Clock Color</string>
+	<string name="statusbar_clock_font_title">Clock Font</string>
+	<string name="statusbar_clock_font_type_summary">Choose clock font type</string>
+	<string name="statusbar_clock_size_title">Clock Size</string>
+
+	<string name="network_traffic_title">Network traffic</string>
+	<string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
+	<string name="network_traffic_single_title">Network speed</string>
+	<string name="network_traffic_single_summary">Show network speed in statusbar</string>
+	<string name="network_speed_color_title">Network speed color</string>
+
+	<string name="network_traffic_separate_title">Network traffic</string>
+	<string name="show_network_traffic_state">Status bar traffic monitor</string>
+	<string name="network_traffic_color_style">Color style</string>
+	<string name="show_network_traffic_unit">Display unit</string>
+	<string name="show_network_traffic_frequency">Update interval</string>
+	<string name="network_traffic_autohide">Auto hide</string>
+	<string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+	<string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+	<string name="network_traffic_color_reset">Reset color</string>
+	<string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
+	<string name="show_network_traffic_1000">1000 ms</string>
+	<string name="show_network_traffic_1500">1500 ms</string>
+	<string name="show_network_traffic_2000">2000 ms</string>
+	<string name="show_network_traffic_500">500 ms</string>
+	<string name="show_network_traffic_all">Outgoing and incoming</string>
+	<string name="show_network_traffic_bit">Bits per second</string>
+	<string name="show_network_traffic_byte">Bytes per second</string>
+	<string name="show_network_traffic_disable">Disabled</string>
+	<string name="show_network_traffic_down">Incoming</string>
+	<string name="show_network_traffic_up">Outgoing</string>
+
+	<string name="signal_settings_title">Signal Options</string>
+	<string name="signal_settings_summary">Customize Signal Icons</string>
+	<string name="signal_icon_title">Signal icon style</string>
+	<string name="signal_icon_scale_title">Signal Icon Size</string>
+	<string name="signal_location_title">Signal location</string>
+	<string name="signal_data_icon_style_title">Data Icon Type Style</string>
+	<string name="signal_sim_number_toggle_title">Signal Icon Number Visibility</string>
+	<string name="signal_wifi_icon_color_title">Wi-Fi Icon Color</string>
+	<string name="signal_wifi_inout_color_title">Wi-Fi In-Out Color</string>
+	<string name="signal_data_type_icon_color_title">Data Type Icon Color</string>
+	<string name="signal_data_inout_icon_color_title">Data In-Out Color</string>
+	<string name="signal_icon_sim1_color_title">Signal Icon SIM1 Color</string>
+	<string name="signal_icon_sim2_color_title">Signal Icon SIM2 Color</string>
+	<string name="signal_airplane_icon_color_title">Airplane Icon Color</string>
+	<string name="signal_vpn_icon_color_title">VPN Icon Color</string>
+	<string name="signal_ethernet_icon_color_title">Ethernet Icon Color</string>
+	<string name="signal_wifi_direct_icon_color_title">Wi-Fi Direct Icon Color</string>
+	<string name="signal_roaming_icon_color_title">Roaming Icon Color</string>
+
+	<string name="battery_settings_title">Battery Options</string>
+	<string name="battery_settings_summary">Customize Battery</string>
+	<string name="battery_style_title">Battery Icon style</string>
+	<string name="battery_location_title">Battery alignment</string>
+	<string name="battery_visible_title">Battery Icon Visibility</string>
+	<string name="battery_color_title">Battery icon color</string>
+	<string name="battery_percent_title">Battery Percentage</string>
+	<string name="battery_text_color_title">Battery Text Color</string>
+	<string name="battery_text_size_title">Battery Text Size</string>
+	<string name="battery_icon_scale_title">Battery Icon Size</string>
+	<string name="battery_bar_settings_title">Battery Bar</string>
+	<string name="battery_bar_title">Battery Bar</string>
+	<string name="battery_bar_style_title">Battery Bar Style</string>
+	<string name="battery_bar_thickness_title">Battery Bar Thickness</string>
+	<string name="battery_bar_anim_title">Battery Bar Charge Animation</string>
+	<string name="battery_bar_color_title">Battery Bar Color</string>
+
+	<string name="statusbar_icons_title">StatusBar Icons</string>
+	<string name="statusbar_icons_summary">Customize More Statusbar Icons &amp; Color</string>
+	<string name="statusbar_glove_mode_icon_color_title">Glove Mode Icon Color</string>
+	<string name="statusbar_alarm_title">Alarm Icon</string>
+	<string name="statusbar_bluetooth_title">Bluetooth Icon</string>
+	<string name="statusbar_sound_title">Sound (Vibrate/Mute) Icon</string>
+
+	<string name="dropdown_layout_style_title">Dropdown Layout Style</string>
+	<string-array name="dropdown_layout_style_entries">
+		<item>Default</item>
+		<item>Style 1</item>
+		<item>Style 2</item>
+		<item>Style 3</item>
+	</string-array>
+	<string-array name="dropdown_layout_style_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string name="dropdown_header_title">Dropdown Header</string>
+	<string name="dropdown_header_summary">Customize Dropdown Header</string>
+	<string name="dropdown_clock_color_title">Header Clock Color</string>
+	<string name="dropdown_date_color_title">Header Date Color</string>
+	<string name="notif_header_bg_wall_title">Pick Header Image</string>
+	<string name="notif_header_bg_wall_summary">Set image background for dropdown header</string>
+	<string name="notif_header_bg_blur_title">Blur background</string>
+	<string name="notif_header_bg_wall_alpha">Header BG Image Alpha</string>
+	<string name="omni_header_style_title">Select OMNI style images</string>
+	<string name="omni_header_style_image_0">Default</string>
+	<string name="omni_header_style_image_1">Modern</string>
+	<string name="omni_header_style_image_2">Poly HD</string>
+	<string name="dropdown_bg_title">Dropdown BG</string>
+	<string name="dropdown_bg_summary">Customize Dropdown BG</string>
+	<string name="notif_bg_wall_title">Pick Dropdown Image</string>
+	<string name="notif_bg_wall_summary">Set notification panel background</string>
+	<string name="notif_bg_blur_title">Blur background</string>
+	<string name="notif_bg_wall_alpha">Dropdown BG Image Alpha</string>
+	<string name="bg_type_title">Background Type</string>
+	<string name="bg_color_title">Background Color</string>
+	<string name="adv_gradient_toggle_title">Adv Gradient Background</string>
+	<string name="adv_gradient_title">Adv Gradient Background</string>
+	<string name="adv_gradient_summary">Customize Gradient Background</string>
+	<string name="gradient_orientation_title">Gradient Orientation</string>
+	<string name="gradient_type_title">Gradient Type</string>
+	<string name="gradient_3color_toggle_title">Enable 3 Color Gradient</string>
+	<string name="gradient_color1_title">Gradient Colors 1</string>
+	<string name="gradient_color2_title">Gradient Colors 2</string>
+	<string name="gradient_color3_title">Gradient Colors 3</string>
+	<string name="gradient_radius_title">Gradient Radius</string>
+	<string name="gradient_corner_radius_title">Gradient Corner Radius</string>
+
+	<string-array name="background_type_entries">
+		<item>Default</item>
+		<item>Color</item>
+		<item>Image</item>
+	</string-array>
+	<string-array name="background_type_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="header_bg_type_entries">
+		<item>Default</item>
+		<item>Color</item>
+		<item>Image</item>
+		<item>OMNI Style</item>
+	</string-array>
+	<string-array name="header_bg_type_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<string-array name="omni_header_style_entries">
+		<item>@string/omni_header_style_image_0</item>
+		<item>@string/omni_header_style_image_1</item>
+		<item>@string/omni_header_style_image_2</item>
+	</string-array>
+	<string-array name="omni_header_style_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="gradient_type_entries">
+		<item>Bottom-left to Top-right</item>
+		<item>Bottom to Top</item>
+		<item>Bottom-right to Top-left</item>
+		<item>Left to Right</item>
+		<item>Right to Left</item>
+		<item>Top-left to Bottom-right</item>
+		<item>Top to Bottom</item>
+		<item>Top-right to Bottom-left</item>
+	</string-array>
+	<string-array name="gradient_type_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+	</string-array>
+	<string-array name="gradient_d_type_entries">
+		<item>LINEAR GRADIENT</item>
+		<item>RADIAL GRADIENT</item>
+		<item>SWEEP GRADIENT</item>
+	</string-array>
+	<string-array name="gradient_d_type_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="gradient_drop_type_entries">
+		<item>LINEAR GRADIENT</item>
+		<item>SWEEP GRADIENT</item>
+	</string-array>
+	<string-array name="gradient_drop_type_values">
+		<item>0</item>
+		<item>2</item>
+	</string-array>
+
+	<string name="carrier_label_title">Carrier Label</string>
+	<string name="carrier_label_summary">Carrier Label Options</string>
+	<string name="carrier_label_align_title">Carrier Label Alignment</string>
+	<string-array name="carrier_label_align_entries">
+		<item>@string/left</item>
+		<item>@string/center</item>
+		<item>@string/right</item>
+	</string-array>
+	<string-array name="carrier_label_align_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string name="carrier_label_toggle_title">Use Custom Carrier Text</string>
+	<string name="carrier_label_text_title">Set Custom Carrier Text</string>
+	<string name="carrier_label_text_color_title">Carrier Text Color</string>
+	<string name="carrier_label_text_size_title">Carrier Text Size</string>
+
+	<string name="notification_text_color_title">Notification Text Color</string>
+	<string name="quicksetting_button_color_title">Quick Settings Button Color</string>
+	<string name="quicksetting_divider_color_title">Quick Settings Divider Color</string>
+
+	<string name="tweak_busybox_title">Install BusyBox &amp; SQLite3</string>
+	<string name="tweak_busybox_summary">Install BusyBox &amp; SQLite3 binary into system, restart phone manually for apply changes.</string>
+	<string name="tweak_adblock_install_title">Install ADBlock Host</string>
+	<string name="tweak_adblock_install_summary">Install Host for blocking Ads, restart phone manually for apply changes.</string>
+	<string name="tweak_adblock_uninstall_title">Uninstall ADBlock Host</string>
+	<string name="tweak_adblock_uninstall_summary">Revert to stock host file, restart phone manually for apply changes.</string>
+	<string name="tweak_sd_write_title">Enable Ext-SD Write</string>
+	<string name="tweak_sd_write_summary">Enable Ext-SD Write for Zen 4S FW 5.4.2, restart phone manually for apply changes.</string>
+	<string name="tweak_sd_write_uninstall_title">Disable Ext-SD Write</string>
+	<string name="tweak_sd_write_uninstall_summary">Revert to Default, restart phone manually for apply changes.</string>
+	<string name="tweak_zen_features_title">Install Zen Features</string>
+	<string name="tweak_zen_features_summary">Enable Glove Mode, Double Tap to Sleep and One Hand Mode, restart phone manually for apply changes.</string>
+	<string name="tweak_zen_features_uninstall_title">Uninstall Zen Features</string>
+	<string name="tweak_zen_features_uninstall_summary">Revert to Default, restart phone manually for apply changes.</string>
+	<string name="enter_cwm_title">Enter CWM Temporary</string>
+	<string name="enter_cwm_summary">Reboot to CWM Temporary, this script will automatically restart the phone.</string>
+	<string name="tweak_soft_reset_title">Soft Reset</string>
+	<string name="tweak_soft_reset_summary">"Reset user settings to default value,
+this is won't delete user data, like apps, etc.
+This script will automatically restart the phone."</string>
+	<string name="tweak_block_bbmads_title">Block BBM Ads</string>
+	<string name="tweak_block_bbmads_summary">Block Ads on BBM, this script will automatically restart the phone.</string>
+
+	<string name="listview_title">Mokee Listview Animations</string>
+	<string name="listview_animation_title">Listview animation</string>
+	<string name="listview_interpolator_title">Listview interpolator</string>
+	<string name="listview_off">Off</string>
+	<string name="listview_wave_left">Wave (left)</string>
+	<string name="listview_wave_right">Wave (right)</string>
+	<string name="listview_alpha">Alpha</string>
+	<string name="listview_scale">Scale</string>
+	<string name="listview_stack_top">Stack (top)</string>
+	<string name="listview_stack_bottom">Stack (bottom)</string>
+	<string name="listview_unfold">Unfold</string>
+	<string name="listview_fold">Fold</string>
+	<string name="listview_translate_left">Translate (left)</string>
+	<string name="listview_translate_right">Translate (right)</string>
+	<string name="listview_rotate">Rotate</string>
+	<string name="listview_accelerate_interpolator">Accelerate</string>
+	<string name="listview_decelerate_interpolator">Decelerate</string>
+	<string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+	<string name="listview_anticipate_interpolator">Anticipate</string>
+	<string name="listview_overshoot_interpolator">Overshoot</string>
+	<string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+	<string name="listview_bounce_interpolator">Bounce</string>
+	<string name="listview_linear_interpolator">Linear</string>
+	<string name="listview_cycle_interpolator">Cycle</string>
+	<string-array name="listview_animation_entries">
+		<item>@string/listview_off</item>
+		<item>@string/listview_wave_left</item>
+		<item>@string/listview_wave_right</item>
+		<item>@string/listview_scale</item>
+		<item>@string/listview_alpha</item>
+		<item>@string/listview_stack_top</item>
+		<item>@string/listview_stack_bottom</item>
+		<item>@string/listview_unfold</item>
+		<item>@string/listview_fold</item>
+		<item>@string/listview_translate_left</item>
+		<item>@string/listview_translate_right</item>
+		<item>@string/listview_rotate</item>
+	</string-array>
+	<string-array name="listview_animation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+	</string-array>
+	<string-array name="listview_interpolator_entries">
+		<item>@string/listview_off</item>
+		<item>@string/listview_accelerate_interpolator</item>
+		<item>@string/listview_decelerate_interpolator</item>
+		<item>@string/listview_accelerate_decelerate_interpolator</item>
+		<item>@string/listview_anticipate_interpolator</item>
+		<item>@string/listview_overshoot_interpolator</item>
+		<item>@string/listview_anticipate_overshoot_interpolator</item>
+		<item>@string/listview_bounce_interpolator</item>
+		<item>@string/listview_linear_interpolator</item>
+		<item>@string/listview_cycle_interpolator</item>
+	</string-array>
+	<string-array name="listview_interpolator_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+	</string-array>
+	<string name="power_menu_title">Advanced Power Menu</string>
+	<string name="power_menu_power_title">Power</string>
+	<string name="power_menu_restart_title">Restart</string>
+	<string name="power_menu_airplane_title">Airplane</string>
+	<string name="power_menu_lockdown_title">Lock</string>
+	<string name="power_menu_settings_title">Settings</string>
+	<string name="power_menu_screenshot_title">Screenshot</string>
+	<string name="power_menu_flashlight_title">Flashlight</string>
+	<string name="power_menu_bootloader_title">Bootloader</string>
+	<string name="power_menu_sound_title">Sound</string>
+
+	<!-- CLOCK -->
+	<string-array name="clock_style_entries">
+		<item>Right clock</item>
+		<item>Center clock</item>
+		<item>Left clock</item>
+		<item>No clock</item>
+	</string-array>
+	<string-array name="clock_style_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>0</item>
+	</string-array>
+	<string-array name="clock_format_entries">
+		<item>Default</item>
+		<item>01:00 PM</item>
+		<item>1:00 PM</item>
+		<item>13:00</item>
+		<item>Custom</item>
+	</string-array>
+	<string-array name="clock_format_values">
+		<item>0</item>
+		<item>3</item>
+		<item>4</item>
+		<item>2</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="clock_ampm_entries">
+		<item>@string/dont_show</item>
+		<item>Small AM/PM</item>
+		<item>Regular AM/PM</item>
+	</string-array>
+	<string-array name="clock_ampm_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="clock_weekday_entries">
+		<item>"Don't show"</item>
+		<item>Small weekday</item>
+		<item>Regular weekday</item>
+	</string-array>
+	<string-array name="clock_weekday_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="clock_date_style_entries">
+		<item>Normal</item>
+		<item>Lowercase</item>
+		<item>Uppercase</item>
+	</string-array>
+	<string-array name="clock_date_style_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="clock_date_format_entries">
+		<item>31/12/14</item>
+		<item>12/31/14</item>
+		<item>2014-12-31</item>
+		<item>2014-31-12</item>
+		<item>31-12-2014</item>
+		<item>12-31-2014</item>
+		<item>Dec 31</item>
+		<item>Dec 31, 2014</item>
+		<item>December 31, 2014</item>
+		<item>Sun</item>
+		<item>Sun 31</item>
+		<item>Sun 31/12</item>
+		<item>Sun 12/31</item>
+		<item>Sun 31 Dec</item>
+		<item>Sun Dec 31</item>
+		<item>Sun December 31</item>
+		<item>Sunday 31/12</item>
+		<item>Sunday 12/31</item>
+		<item>Custom java format</item>
+	</string-array>
+	<string-array name="clock_date_format_values">
+		<item>dd/MM/yy</item>
+		<item>MM/dd/yy</item>
+		<item>yyyy-MM-dd</item>
+		<item>yyyy-dd-MM</item>
+		<item>dd-MM-yyyy</item>
+		<item>MM-dd-yyyy</item>
+		<item>MMM dd</item>
+		<item>MMM dd, yyyy</item>
+		<item>MMMM dd, yyyy</item>
+		<item>EEE</item>
+		<item>EEE dd</item>
+		<item>EEE dd/MM</item>
+		<item>EEE MM/dd</item>
+		<item>EEE dd MMM</item>
+		<item>EEE MMM dd</item>
+		<item>EEE MMMM dd</item>
+		<item>EEEE dd/MM</item>
+		<item>EEEE MM/dd</item>
+		<item></item>
+	</string-array>
+	<string-array name="clock_font_style_entries">
+		<item>Bold</item>
+		<item>Condensed</item>
+		<item>Light</item>
+		<item>Light Italic</item>
+		<item>Normal</item>
+	</string-array>
+	<string-array name="clock_font_style_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<!-- Network Traffic -->
+	<string-array name="show_network_traffic_state_entries">
+		<item>@string/show_network_traffic_disable</item>
+		<item>@string/show_network_traffic_up</item>
+		<item>@string/show_network_traffic_down</item>
+		<item>@string/show_network_traffic_all</item>
+	</string-array>
+	<string-array name="show_network_traffic_state_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="show_network_traffic_unit_entries">
+		<item>@string/show_network_traffic_bit</item>
+		<item>@string/show_network_traffic_byte</item>
+	</string-array>
+	<string-array name="show_network_traffic_unit_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="show_network_traffic_frequency_entries">
+		<item>@string/show_network_traffic_500</item>
+		<item>@string/show_network_traffic_1000</item>
+		<item>@string/show_network_traffic_1500</item>
+		<item>@string/show_network_traffic_2000</item>
+	</string-array>
+	<string-array name="show_network_traffic_frequency_values">
+		<item>500</item>
+		<item>1000</item>
+		<item>1500</item>
+		<item>2000</item>
+	</string-array>
+	<!-- Signal -->
+	<string-array name="signal_icon_entries">
+		<item>Stock</item>
+		<item>Cloud</item>
+		<item>AOSP</item>
+		<item>Dots</item>
+		<item>Fill</item>
+		<item>Block</item>
+		<item>Samsung</item>
+		<item>Arrow</item>
+		<item>iOS</item>
+		<item>Snail</item>
+		<item>Molekul</item>
+		<item>PacMan</item>
+		<item>Purba</item>
+		<item>Tulang Ikan</item>
+		<item>Tangan</item>
+		<item>Indo</item>
+		<item>Box</item>
+	</string-array>
+	<string-array name="signal_icon_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+	</string-array>
+	<string-array name="signal_icon_drawables">
+		<item>@drawable/stat_sys_signal_4_fully</item>
+		<item>@drawable/s01_signal_4</item>
+		<item>@drawable/s02_signal_4</item>
+		<item>@drawable/s03_signal_4</item>
+		<item>@drawable/s04_signal_4</item>
+		<item>@drawable/s05_signal_4</item>
+		<item>@drawable/s06_signal_4</item>
+		<item>@drawable/s07_signal_4</item>
+		<item>@drawable/s08_signal_4</item>
+		<item>@drawable/s09_signal_4</item>
+		<item>@drawable/s10_signal_4</item>
+		<item>@drawable/s11_signal_4</item>
+		<item>@drawable/s12_signal_4</item>
+		<item>@drawable/s13_signal_4</item>
+		<item>@drawable/s14_signal_4</item>
+		<item>@drawable/s15_signal_4</item>
+		<item>@drawable/s16_signal_4</item>
+	</string-array>
+	<string-array name="signal_size_selector_entries">
+		<item>50%</item>
+		<item>62.%</item>
+		<item>75%</item>
+		<item>87.5%</item>
+		<item>100%</item>
+		<item>112.5%</item>
+		<item>125%</item>
+	</string-array>
+	<string-array name="signal_size_selector_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+	<string-array name="signal_location_entries">
+		<item>Right</item>
+		<item>Left</item>
+		<item>"Don't Show"</item>
+	</string-array>
+	<string-array name="signal_location_values">
+		<item>1</item>
+		<item>2</item>
+		<item>0</item>
+	</string-array>
+	<string-array name="data_icon_type_entries">
+		<item>Default</item>
+		<item>G</item>
+		<item>E</item>
+		<item>3G</item>
+		<item>H</item>
+		<item>H+</item>
+		<item>4G</item>
+		<item>4G+</item>
+		<item>LTE</item>
+		<item>R</item>
+	</string-array>
+	<string-array name="data_icon_type_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+	</string-array>
+	<string-array name="data_icon_type_drawables">
+		<item>@null</item>
+		<item>@drawable/stat_sys_data_fully_connected_g</item>
+		<item>@drawable/stat_sys_data_fully_connected_e</item>
+		<item>@drawable/stat_sys_data_fully_connected_3g</item>
+		<item>@drawable/stat_sys_data_fully_connected_h</item>
+		<item>@drawable/stat_sys_data_fully_connected_hplus</item>
+		<item>@drawable/stat_sys_data_fully_connected_4g</item>
+		<item>@drawable/stat_sys_data_fully_connected_4gplus</item>
+		<item>@drawable/stat_sys_data_fully_connected_lte</item>
+		<item>@drawable/stat_sys_data_fully_connected_roam</item>
+	</string-array>
+	<!-- Battery -->
+	<string-array name="battery_icon_entries">
+		<item>Stock</item>
+		<item>Pad</item>
+		<item>Circle Bold</item>
+		<item>3D</item>
+		<item>Black Titanium</item>
+		<item>Samsung</item>
+		<item>Evo</item>
+		<item>Gold</item>
+		<item>Xperia Z</item>
+		<item>Mini</item>
+		<item>Xperia</item>
+		<item>MIUI</item>
+		<item>Mbuh Blue</item>
+		<item>Mbuh White</item>
+		<item>AOSP</item>
+		<item>Circle</item>
+		<item>Froyo</item>
+		<item>Hitech</item>
+		<item>Honami</item>
+		<item>Honey</item>
+		<item>Castaway</item>
+		<item>Green Glass</item>
+		<item>Blade</item>
+		<item>Circle 3D</item>
+		<item>Circe v2</item>
+		<item>Force Stock</item>
+	</string-array>
+	<string-array name="battery_icon_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>23</item>
+		<item>24</item>
+		<item>25</item>
+	</string-array>
+	<string-array name="battery_icon_drawables">
+		<item>@drawable/stat_sys_battery_100</item>
+		<item>@drawable/asus_ep_pad_battery_100</item>
+		<item>@drawable/s01_battery_100</item>
+		<item>@drawable/s02_battery_100</item>
+		<item>@drawable/s03_battery_100</item>
+		<item>@drawable/s04_battery_100</item>
+		<item>@drawable/s05_battery_100</item>
+		<item>@drawable/s06_battery_100</item>
+		<item>@drawable/s07_battery_100</item>
+		<item>@drawable/s08_battery_100</item>
+		<item>@drawable/s09_battery_100</item>
+		<item>@drawable/s10_battery_100</item>
+		<item>@drawable/s11_battery_100</item>
+		<item>@drawable/s12_battery_100</item>
+		<item>@drawable/s13_battery_100</item>
+		<item>@drawable/s14_battery_100</item>
+		<item>@drawable/s15_battery_100</item>
+		<item>@drawable/s16_battery_100</item>
+		<item>@drawable/s17_battery_100</item>
+		<item>@drawable/s18_battery_100</item>
+		<item>@drawable/s19_battery_100</item>
+		<item>@drawable/s20_battery_100</item>
+		<item>@drawable/s21_battery_100</item>
+		<item>@drawable/s22_battery_100</item>
+		<item>@drawable/s23_battery_100</item>
+		<item>@drawable/stat_sys_battery_100</item>
+	</string-array>
+	<string-array name="battery_size_selector_entries">
+		<item>50%</item>
+		<item>62.%</item>
+		<item>75%</item>
+		<item>87.5%</item>
+		<item>100%</item>
+		<item>112.5%</item>
+		<item>125%</item>
+	</string-array>
+	<string-array name="battery_size_selector_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+	<string-array name="battery_location_entries">
+		<item>Right</item>
+		<item>Left</item>
+	</string-array>
+	<string-array name="battery_location_values">
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<!--Battery Bar -->
+	<string-array name="battery_bar_entries">
+		<item>"Don't Show"</item>
+		<item>Top of Statusbar</item>
+		<item>Bottom of Statusbar</item>
+		<item>Top of NavBar</item>
+		<item>Bottom of NavBar</item>
+	</string-array>
+	<string-array name="battery_bar_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<string-array name="battery_bar_style_entries">
+		<item>Regular</item>
+		<item>Center-mirrored</item>
+	</string-array>
+	<string-array name="battery_bar_style_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="battery_bar_thickness_entries">
+		<item>½ dp</item>
+		<item>1 dp</item>
+		<item>2 dp</item>
+		<item>3 dp</item>
+		<item>4 dp</item>
+	</string-array>
+	<string-array name="battery_bar_thickness_values">
+		<item>0.5</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+
+	<string name="about_DEV_summary">MOD Developer</string>
+	<string name="donate">Donate</string>
+	<string name="donate_summary">Click Here to Support My Work By Donating</string>
+	<string name="about_facebook">Facebook</string>
+	<string name="about_facebook_summary">Add Me on Facebook</string>
+	<string name="about_twitter">Twitter</string>
+	<string name="about_twitter_summary">Follow Me on Twitter</string>
+	<string name="about_gplus">Google+</string>
+	<string name="about_gplus_summary">Follow Me on Google+</string>
+	<string name="about_xda">XDA</string>
+	<string name="about_xda_summary">Add Me on XDA</string>
+	<string name="about_github">Github</string>
+	<string name="about_github_summary">Follow Me on Github</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="theme_chooser_dialog_title">Choose Theme</string>
+	<string name="app_reboot_required_title">App Reboot Required</string>
+	<string name="app_reboot_required_message">%1$s reboot is required for the changes to take effect.\n\nReboot now?</string>
+
+	<string name="gesture_anywhere_title"><b><i>Gesture Anywhere</i></b></string>
+	<string name="gesture_anywhere_enabled_title"><b><i>Gesture Anywhere</i></b></string>
+	<string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
+	<string name="gesture_anywhere_position_title">Location</string>
+	<string name="gesture_anywhere_position_left">Left edge</string>
+	<string name="gesture_anywhere_position_right">Right edge</string>
+	<string name="gesture_anywhere_gestures_title">Gestures</string>
+	<string name="gesture_anywhere_gestures_summary">Add, remove, and edit gestures</string>
+	<string name="ga_button_add">Add gesture</string>
+	<string name="ga_button_reload">Reload</string>
+	<string name="ga_button_discard">Discard</string>
+	<string name="ga_button_done">Done</string>
+	<string name="ga_prompt_gesture_name">Name</string>
+	<string name="ga_error_missing_name">You must enter a name</string>
+	<string name="ga_save_success">Gesture saved in %s</string>
+	<string name="ga_rename_action">OK</string>
+	<string name="ga_cancel_action">Cancel</string>
+	<string name="ga_gestures_loading">Loading gestures...</string>
+	<string name="ga_gestures_empty">No gestures</string>
+	<string name="ga_gestures_activity">Gestures</string>
+	<string name="ga_gestures_edit">Edit</string>
+	<string name="ga_gestures_delete">Delete</string>
+	<string name="ga_gestures_delete_success">Gesture deleted</string>
+	<string name="ga_gestures_rename_title">Rename gesture</string>
+	<string name="ga_gestures_rename_label">Gesture name</string>
+	<string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
+	<string name="picker_activities">Select Activities</string>
+	<string name="profile_applist_title">Select App</string>
+	<string name="select_custom_app_title">Select Custom App</string>
+	<string name="select_custom_activity_title">Select Custom Activities</string>
+	<string-array name="gesture_anywhere_position_entries">
+		<item>@string/gesture_anywhere_position_left</item>
+		<item>@string/gesture_anywhere_position_right</item>
+	</string-array>
+	<string-array name="gesture_anywhere_position_values">
+		<item>3</item>
+		<item>5</item>
+	</string-array>
+	<string name="trigger_category">Trigger</string>
+	<string name="trigger_width_title">Trigger Width</string>
+	<string name="trigger_top_title">Trigger Top</string>
+	<string name="trigger_bottom_title">Trigger Bottom</string>
+</resources>

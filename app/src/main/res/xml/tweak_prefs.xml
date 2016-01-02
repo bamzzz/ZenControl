@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceScreen
+		android:key="script#busybox-sqlite3-install"
+		android:summary="@string/tweak_busybox_summary"
+		android:title="@string/tweak_busybox_title" />
+	<PreferenceScreen
+		android:key="script#adblock-install"
+		android:summary="@string/tweak_adblock_install_summary"
+		android:title="@string/tweak_adblock_install_title" />
+	<PreferenceScreen
+		android:key="script#adblock-uninstall"
+		android:summary="@string/tweak_adblock_uninstall_summary"
+		android:title="@string/tweak_adblock_uninstall_title" />
+	<PreferenceScreen
+		android:key="script#sd-write"
+		android:summary="@string/tweak_sd_write_summary"
+		android:title="@string/tweak_sd_write_title" />
+	<PreferenceScreen
+		android:key="script#sd-write-uninstall"
+		android:summary="@string/tweak_sd_write_uninstall_summary"
+		android:title="@string/tweak_sd_write_uninstall_title" />
+	<PreferenceScreen
+		android:key="script#zen-features"
+		android:summary="@string/tweak_zen_features_summary"
+		android:title="@string/tweak_zen_features_title" />
+	<PreferenceScreen
+		android:key="script#zen-features-uninstall"
+		android:summary="@string/tweak_zen_features_uninstall_summary"
+		android:title="@string/tweak_zen_features_uninstall_title" />
+	<PreferenceScreen
+		android:key="script#adblock-bbm"
+		android:summary="@string/tweak_block_bbmads_summary"
+		android:title="@string/tweak_block_bbmads_title" />
+	<PreferenceScreen
+		android:key="script#soft-reset"
+		android:summary="@string/tweak_soft_reset_summary"
+		android:title="@string/tweak_soft_reset_title" />
+	<PreferenceScreen
+		android:key="script#cwmtemp"
+		android:summary="@string/enter_cwm_summary"
+		android:title="@string/enter_cwm_title" />
+</PreferenceScreen>

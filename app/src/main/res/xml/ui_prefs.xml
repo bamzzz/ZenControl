@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+	<PreferenceScreen android:title="@string/statusbar_clock_title" android:summary="@string/statusbar_clock_summary">
+		<PreferenceCategory android:title="@string/statusbar_clock_title" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_style_entries"
+			android:title="@string/statusbar_clock_style_title"
+			android:key="statusbar_clock_style"
+			android:summary="@string/statusbar_clock_style_summary"
+			android:defaultValue="2"
+			android:entryValues="@array/clock_style_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_format_entries"
+			android:title="Clock format"
+			android:key="statusbar_clock_format_styles"
+			android:summary="@string/statusbar_clock_style_summary"
+			android:defaultValue="2"
+			android:entryValues="@array/clock_format_values" />
+		<com.wubydax.romcontrol.prefs.MyEditTextPreference
+			android:title="Custom clock format"
+			android:key="statusbar_clock_format"
+			android:summary="@string/statusbar_clock_date_custom_summary"
+			android:dialogTitle="@string/statusbar_clock_date_formatted_title"
+			android:defaultValue="HH:mm:ss" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_ampm_entries"
+			android:title="@string/statusbar_clock_ampm_title"
+			android:key="statusbar_clock_am_pm_style"
+			android:summary="@string/statusbar_clock_ampm_summary"
+			android:defaultValue="0"
+			android:entryValues="@array/clock_ampm_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_weekday_entries"
+			android:title="@string/statusbar_clock_type_title"
+			android:key="statusbar_clock_date_display"
+			android:summary="@string/statusbar_clock_type_summary"
+			android:defaultValue="0"
+			android:entryValues="@array/clock_weekday_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_date_style_entries"
+			android:title="@string/statusbar_clock_date_style_title"
+			android:key="statusbar_clock_date_style"
+			android:defaultValue="0"
+			android:entryValues="@array/clock_date_style_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_date_format_entries"
+			android:title="@string/statusbar_clock_date_format_title"
+			android:key="statusbar_clock_date_format"
+			android:defaultValue="EEE"
+			android:entryValues="@array/clock_date_format_values" />
+		<com.wubydax.romcontrol.prefs.MyEditTextPreference
+			android:title="@string/statusbar_clock_date_custom_title"
+			android:key="statusbar_clock_date_format"
+			android:summary="@string/statusbar_clock_date_custom_summary"
+			android:dialogTitle="@string/statusbar_clock_date_formatted_title"
+			android:defaultValue="EEE" />
+		<!-- 		<CheckBoxPreference android:title="@string/statusbar_clock_second_title" android:key="clock_use_second" android:summary="@string/statusbar_clock_second_summary" android:defaultValue="false" /> -->
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/statusbar_clock_color_title"
+			android:key="statusbar_clock_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/clock_font_style_entries"
+			android:title="@string/statusbar_clock_font_title"
+			android:key="statusbar_clock_font_style"
+			android:summary="@string/statusbar_clock_font_type_summary"
+			android:defaultValue="4"
+			android:entryValues="@array/clock_font_style_values" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:icon="@null"
+			android:max="24"
+			android:title="@string/statusbar_clock_size_title"
+			android:key="statusbar_clock_size"
+			android:defaultValue="16"
+			min="8"
+			unitsRight="dip" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/battery_settings_title" android:summary="@string/battery_settings_summary">
+		<PreferenceCategory android:title="@string/battery_settings_title" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:title="@string/battery_visible_title"
+			android:key="enable_battery_icon"
+			android:summaryOn="@string/show"
+			android:summaryOff="@string/hide" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/battery_color_title"
+			android:key="battery_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<!-- <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/battery_icon_entries" android:title="@string/battery_style_title" android:key="battery_icon_style" android:defaultValue="0" android:entryValues="@array/battery_icon_values" /> -->
+		<com.wubydax.romcontrol.prefs.ThumbnailListPreference
+			android:key="battery_icon_style"
+			android:title="@string/battery_style_title"
+			app:drawableArray="@array/battery_icon_drawables"
+			app:entryDefault="0"
+			app:entryList="@array/battery_icon_entries"
+			app:entryValuesList="@array/battery_icon_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/battery_location_entries"
+			android:title="@string/battery_location_title"
+			android:key="battery_cluster_position"
+			android:defaultValue="1"
+			android:entryValues="@array/battery_location_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/battery_size_selector_entries"
+			android:title="@string/battery_icon_scale_title"
+			android:key="battery_icon_scale"
+			android:defaultValue="4"
+			android:entryValues="@array/battery_size_selector_values" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:title="@string/battery_percent_title"
+			android:key="show_battery"
+			android:summaryOn="@string/show"
+			android:summaryOff="@string/hide" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/battery_text_color_title"
+			android:key="battery_text_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:icon="@null"
+			android:max="24"
+			android:title="@string/battery_text_size_title"
+			android:key="battery_text_size"
+			android:defaultValue="16"
+			min="8"
+			unitsRight="dip" />
+		<PreferenceCategory android:title="@string/battery_bar_settings_title" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/battery_bar_entries"
+			android:title="@string/battery_bar_title"
+			android:key="battery_bar"
+			android:defaultValue="0"
+			android:entryValues="@array/battery_bar_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/battery_bar_style_entries"
+			android:title="@string/battery_bar_style_title"
+			android:key="battery_bar_style"
+			android:defaultValue="1"
+			android:entryValues="@array/battery_bar_style_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/battery_bar_thickness_entries"
+			android:title="@string/battery_bar_thickness_title"
+			android:key="battery_bar_thickness"
+			android:defaultValue="1"
+			android:entryValues="@array/battery_bar_thickness_values" />
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:title="@string/battery_bar_anim_title"
+			android:key="battery_bar_animate"
+			android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/battery_bar_color_title"
+			android:key="battery_bar_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/signal_settings_title" android:summary="@string/signal_settings_summary">
+		<PreferenceCategory android:title="@string/signal_settings_title" />
+		<!-- <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/signal_icon_entries" android:title="@string/signal_icon_title" android:key="signal_icon_style" android:defaultValue="0" android:entryValues="@array/signal_icon_values" /> -->
+		<com.wubydax.romcontrol.prefs.ThumbnailListPreference
+			android:key="signal_icon_style"
+			android:title="@string/signal_icon_title"
+			app:drawableArray="@array/signal_icon_drawables"
+			app:entryDefault="0"
+			app:entryList="@array/signal_icon_entries"
+			app:entryValuesList="@array/signal_icon_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/signal_size_selector_entries"
+			android:title="@string/signal_icon_scale_title"
+			android:key="signal_icon_scale" android:defaultValue="4"
+			android:entryValues="@array/signal_size_selector_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/signal_location_entries"
+			android:title="@string/signal_location_title"
+			android:key="signal_cluster_position" android:defaultValue="1"
+			android:entryValues="@array/signal_location_values" />
+		<!-- <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/data_icon_type_entries" android:title="@string/signal_data_icon_style_title" android:key="data_icon_type_style" android:defaultValue="0" android:entryValues="@array/data_icon_type_values" /> -->
+		<com.wubydax.romcontrol.prefs.ThumbnailListPreference
+			android:key="data_icon_type_style"
+			android:title="@string/signal_data_icon_style_title"
+			app:drawableArray="@array/data_icon_type_drawables"
+			app:entryDefault="0"
+			app:entryList="@array/data_icon_type_entries"
+			app:entryValuesList="@array/data_icon_type_values" />
+		<CheckBoxPreference
+			android:title="@string/signal_sim_number_toggle_title"
+			android:key="signal_sim_number_toggle"
+			android:defaultValue="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_wifi_icon_color_title"
+			android:key="wifi_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_wifi_inout_color_title"
+			android:key="wifi_inout_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_data_type_icon_color_title"
+			android:key="data_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_data_inout_icon_color_title"
+			android:key="data_inout_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_icon_sim1_color_title"
+			android:key="sim1_signal_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_icon_sim2_color_title"
+			android:key="sim2_signal_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_airplane_icon_color_title"
+			android:key="airplane_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_vpn_icon_color_title"
+			android:key="vpn_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_ethernet_icon_color_title"
+			android:key="ethernet_icon_color" android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_wifi_direct_icon_color_title"
+			android:key="wifi_direct_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/signal_roaming_icon_color_title"
+			android:key="roaming_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/network_traffic_title" android:summary="@string/network_traffic_summary">
+		<PreferenceCategory android:title="@string/network_traffic_single_title" />
+		<CheckBoxPreference
+			android:title="@string/network_traffic_single_title"
+			android:key="status_bar_traffic"
+			android:summary="@string/network_traffic_single_summary"
+			android:defaultValue="false" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/network_speed_color_title"
+			android:key="status_bar_traffic_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true"
+			android:dependency="status_bar_traffic" />
+		<PreferenceCategory android:title="@string/network_traffic_separate_title" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/show_network_traffic_state_entries"
+			android:title="@string/show_network_traffic_state"
+			android:key="network_traffic_state"
+			android:defaultValue="3"
+			android:entryValues="@array/show_network_traffic_state_values" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/network_traffic_color_style"
+			android:key="network_traffic_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/show_network_traffic_unit_entries"
+			android:title="@string/show_network_traffic_unit"
+			android:key="network_traffic_unit"
+			android:defaultValue="1"
+			android:entryValues="@array/show_network_traffic_unit_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/show_network_traffic_frequency_entries"
+			android:title="@string/show_network_traffic_frequency"
+			android:key="network_traffic_period"
+			android:defaultValue="1000"
+			android:entryValues="@array/show_network_traffic_frequency_values" />
+		<CheckBoxPreference
+			android:title="@string/network_traffic_autohide"
+			android:key="network_traffic_autohide"
+			android:defaultValue="false"
+			android:summary="@string/network_traffic_autohide_summary" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:icon="@null"
+			android:max="100"
+			android:title="@string/network_traffic_autohide_threshold"
+			android:key="network_traffic_autohide_threshold"
+			android:dependency="network_traffic_autohide"
+			android:defaultValue="5"
+			min="0"
+			unitsRight="Kb/s" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/statusbar_icons_title" android:summary="@string/statusbar_icons_summary">
+		<PreferenceCategory android:title="@string/statusbar_icons_title" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/statusbar_glove_mode_icon_color_title"
+			android:key="glove_mode_icon_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<CheckBoxPreference
+			android:title="@string/statusbar_alarm_title"
+			android:key="sb_alarm_icon" android:summaryOn="@string/show"
+			android:summaryOff="@string/hide"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/statusbar_bluetooth_title"
+			android:key="sb_bluetooth_icon" android:summaryOn="@string/show"
+			android:summaryOff="@string/hide"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/statusbar_sound_title"
+			android:key="sb_sound_icon" android:summaryOn="@string/show"
+			android:summaryOff="@string/hide"
+			android:defaultValue="true" />
+	</PreferenceScreen>
+
+
+<!--	<PreferenceScreen android:title="Pick Dropdown Image" android:key="com.wubydax.romcontrol.ImagePickerPreference" />-->
+
+<!--    <PreferenceCategory android:title="Status Bar Mods">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="clock_visibility"
+            android:summaryOff="Clock is hidden"
+            android:summaryOn="Clock is visible"
+            android:title="Set Clock Visibility" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="brightness_visibility"
+            android:summaryOff="Brightness slider hidden"
+            android:summaryOn="Brightness slider is visible"
+            android:title="Notification Brightness Visibility" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/clock_position_entries"
+            android:entryValues="@array/clock_position_values"
+            android:key="any_clock_position"
+            android:title="Status Bar Clock Position" />
+        <com.wubydax.romcontrol.prefs.MyEditTextPreference
+            android:defaultValue="simpletext"
+            android:key="carrier_text"
+            android:title="Set Custom Carrier Text" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="#ffff0000"
+            android:key="clock_color"
+            android:title="Choose Clock Color" />
+        <PreferenceScreen
+            android:key="script#test"
+            android:summary="Click see what happens"
+            android:title="New Preference Screen" />
+        <com.wubydax.romcontrol.prefs.SeekBarPreference
+            min="0"
+            unitsRight="Kb/s"
+            android:defaultValue="10"
+            android:icon="@null"
+            android:key="network_traffic_autohide_threshold"
+            android:max="100"
+            android:title="Autohide Threshold" />
+        <PreferenceScreen
+
+            android:summary="New Preference screen"
+            android:title="New Preference Screen">
+            <PreferenceCategory android:title="new category" />
+            <CheckBoxPreference
+                android:key="text_checkbox"
+                android:title="Checkbox" />
+            <SwitchPreference
+                android:key="test_switch"
+                android:title="Switch" />
+        </PreferenceScreen>
+        <com.wubydax.romcontrol.prefs.IntentDialogPreference
+            includeSearch="true"
+            setSeparatorString="\##"
+            android:key="choosen_app_gear"
+            android:title="Choose App" />
+        <com.wubydax.romcontrol.prefs.FilePreference
+            android:key="testfile"
+            android:summaryOff="File doesn't exist"
+            android:summaryOn="File exists"
+            android:title="Test File Preference" />
+
+    </PreferenceCategory>-->
+
+
+</PreferenceScreen>

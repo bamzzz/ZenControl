@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--	<PreferenceScreen
+		android:key=""
+		android:layout_width="match_parent"
+		android:layout_height="135dp"
+		android:layout="@layout/my_logo" >
+	</PreferenceScreen>-->
+	<Preference
+		android:icon="@drawable/bamzzz"
+		android:title="bamzzz"
+		android:summary="@string/about_DEV_summary" />
+	<Preference
+		android:icon="@drawable/ic_square_inc_cash"
+		android:title="@string/donate"
+		android:summary="@string/donate_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="http://forum.xda-developers.com/donatetome.php?u=4672359" />
+	</Preference>
+	<Preference
+		android:icon="@drawable/ic_facebook"
+		android:title="@string/about_facebook"
+		android:summary="@string/about_facebook_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="http://fb.me/bamz4ever" />
+	</Preference>
+	<Preference
+		android:icon="@drawable/ic_google_plus"
+		android:title="@string/about_gplus"
+		android:summary="@string/about_gplus_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://plus.google.com/u/0/106478093138593738378" />
+	</Preference>
+	<Preference
+		android:icon="@drawable/ic_twitter"
+		android:title="@string/about_twitter"
+		android:summary="@string/about_twitter_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://www.twitter.com/gue_bamz" />
+	</Preference>
+	<Preference
+		android:icon="@drawable/ic_xda"
+		android:title="@string/about_xda"
+		android:summary="@string/about_xda_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="http://forum.xda-developers.com/member.php?u=4672359" />
+	</Preference>
+	<Preference
+		android:icon="@drawable/ic_github_box"
+		android:title="@string/about_github"
+		android:summary="@string/about_github_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github.com/bamzzz/ZenControl" />
+	</Preference>
+</PreferenceScreen>

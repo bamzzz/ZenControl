@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<com.wubydax.romcontrol.prefs.MyListPreference
+		android:entries="@array/dropdown_layout_style_entries"
+		android:title="@string/dropdown_layout_style_title"
+		android:key="dropdown_layout_style"
+		android:defaultValue="0"
+		android:entryValues="@array/dropdown_layout_style_values" />
+	
+	<PreferenceScreen android:title="@string/dropdown_header_title" android:summary="@string/dropdown_header_summary">
+		<PreferenceCategory android:title="@string/dropdown_header_title" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/dropdown_clock_color_title"
+			android:key="dropdown_clock_color"
+			android:defaultValue="\#ff737373"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/dropdown_date_color_title"
+			android:key="dropdown_date_color"
+			android:defaultValue="\#ff737373"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/header_bg_type_entries"
+			android:title="@string/bg_type_title"
+			android:key="dropdown_header_bg_type"
+			android:defaultValue="1"
+			android:entryValues="@array/header_bg_type_values" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/omni_header_style_entries"
+			android:title="@string/omni_header_style_title"
+			android:key="omni_header_style"
+			android:defaultValue="0"
+			android:entryValues="@array/omni_header_style_values" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/bg_color_title"
+			android:key="dropdown_header_bg_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:title="@string/adv_gradient_toggle_title"
+			android:key="enable_gradient_dropdown_header_bg"
+			android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable" />
+		<PreferenceScreen
+			android:title="@string/adv_gradient_title"
+			android:summary="@string/adv_gradient_summary"
+			android:dependency="enable_gradient_dropdown_header_bg">
+			<com.wubydax.romcontrol.prefs.MyListPreference
+				android:entries="@array/gradient_type_entries"
+				android:title="@string/gradient_orientation_title"
+				android:key="gradient_dropdown_header_bg_type"
+				android:defaultValue="7"
+				android:entryValues="@array/gradient_type_values" />
+			<com.wubydax.romcontrol.prefs.MyListPreference
+				android:entries="@array/gradient_d_type_entries"
+				android:title="@string/gradient_type_title"
+				android:key="gradient_model_dropdown_header_bg_type"
+				android:defaultValue="0"
+				android:entryValues="@array/gradient_d_type_values" />
+			<CheckBoxPreference
+				android:defaultValue="false"
+				android:title="@string/gradient_3color_toggle_title"
+				android:key="enable_gradient_3color_dropdown_header_bg"
+				android:summaryOn="@string/enable"
+				android:summaryOff="@string/disable" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color1_title"
+				android:key="gradient_color1_dropdown_header_bg"
+				android:defaultValue="\#ffff0000"
+				alphaSlider="true" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color2_title"
+				android:key="gradient_color2_dropdown_header_bg"
+				android:defaultValue="\#ff00ff00"
+				alphaSlider="true" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color3_title"
+				android:key="gradient_color3_dropdown_header_bg"
+				android:defaultValue="\#ff0000ff"
+				alphaSlider="true"
+				android:dependency="enable_gradient_3color_dropdown_header_bg" />
+			<com.wubydax.romcontrol.prefs.SeekBarPreference
+				android:max="1000"
+				android:title="@string/gradient_radius_title"
+				android:key="gradient_radius_dropdown_header_bg"
+				android:defaultValue="500" />
+			<com.wubydax.romcontrol.prefs.SeekBarPreference
+				android:max="50"
+				android:title="@string/gradient_corner_radius_title"
+				android:key="corner_radius_dropdown_header_bg"
+				android:defaultValue="0" />
+		</PreferenceScreen>
+		<!--<PreferenceScreen
+			android:title="@string/notif_header_bg_wall_title"
+			android:key="com.bamzzz.romcontrol.DropdownHeaderWallpaperPicker"
+			android:summary="@string/notif_header_bg_wall_summary" />-->
+		<PreferenceScreen
+			android:title="@string/notif_header_bg_wall_title"
+			android:key="com.wubydax.romcontrol.DropdownHeaderImage"
+			android:summary="@string/notif_header_bg_wall_summary" />
+		<CheckBoxPreference
+			android:title="@string/notif_header_bg_blur_title"
+			android:key="dropdown_header_blur" android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable"
+			android:defaultValue="false" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:max="255"
+			android:title="@string/notif_header_bg_wall_alpha"
+			android:key="dropdown_header_wallpaper_alpha"
+			android:defaultValue="200" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/dropdown_bg_title" android:summary="@string/dropdown_bg_summary">
+		<PreferenceCategory android:title="@string/dropdown_bg_title" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/background_type_entries"
+			android:title="@string/bg_type_title"
+			android:key="dropdown_bg_type"
+			android:defaultValue="1"
+			android:entryValues="@array/background_type_values" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/bg_color_title"
+			android:key="dropdown_bg_color"
+			android:defaultValue="\#ffffffff"
+			alphaSlider="true" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:title="@string/adv_gradient_toggle_title"
+			android:key="enable_gradient_dropdown_bg"
+			android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable" />
+		<PreferenceScreen
+			android:title="@string/adv_gradient_title"
+			android:summary="@string/adv_gradient_summary"
+			android:dependency="enable_gradient_dropdown_bg">
+			<com.wubydax.romcontrol.prefs.MyListPreference
+				android:entries="@array/gradient_type_entries"
+				android:title="@string/gradient_orientation_title"
+				android:key="gradient_dropdown_bg_type"
+				android:defaultValue="7"
+				android:entryValues="@array/gradient_type_values" />
+			<com.wubydax.romcontrol.prefs.MyListPreference
+				android:entries="@array/gradient_d_type_entries"
+				android:title="@string/gradient_type_title"
+				android:key="gradient_model_dropdown_bg_type"
+				android:defaultValue="0"
+				android:entryValues="@array/gradient_d_type_values" />
+			<CheckBoxPreference
+				android:defaultValue="false"
+				android:title="@string/gradient_3color_toggle_title"
+				android:key="enable_gradient_3color_dropdown_bg"
+				android:summaryOn="@string/enable"
+				android:summaryOff="@string/disable" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color1_title"
+				android:key="gradient_color1_dropdown_bg"
+				android:defaultValue="\#ffff0000"
+				alphaSlider="true" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color2_title"
+				android:key="gradient_color2_dropdown_bg"
+				android:defaultValue="\#ff00ff00"
+				alphaSlider="true" />
+			<com.wubydax.romcontrol.prefs.ColorPickerPreference
+				android:title="@string/gradient_color3_title"
+				android:key="gradient_color3_dropdown_bg"
+				android:defaultValue="\#ff0000ff"
+				alphaSlider="true"
+				android:dependency="enable_gradient_3color_dropdown_bg" />
+			<com.wubydax.romcontrol.prefs.SeekBarPreference
+				android:max="1000"
+				android:title="@string/gradient_radius_title"
+				android:key="gradient_radius_dropdown_bg"
+				android:defaultValue="500" />
+			<com.wubydax.romcontrol.prefs.SeekBarPreference
+				android:max="50"
+				android:title="@string/gradient_corner_radius_title"
+				android:key="corner_radius_dropdown_bg"
+				android:defaultValue="0" />
+		</PreferenceScreen>
+<!--		<PreferenceScreen
+			android:title="@string/notif_bg_wall_title"
+			android:key="com.bamzzz.romcontrol.DropdownWallpaperPicker"
+			android:summary="@string/notif_bg_wall_summary" />-->
+		<PreferenceScreen
+			android:title="@string/notif_bg_wall_title"
+			android:key="com.wubydax.romcontrol.DropdownImage"
+			android:summary="@string/notif_bg_wall_summary" />
+		<CheckBoxPreference
+			android:title="@string/notif_bg_blur_title"
+			android:key="dropdown_blur" android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable"
+			android:defaultValue="false" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:max="255"
+			android:title="@string/notif_bg_wall_alpha"
+			android:key="dropdown_wallpaper_alpha"
+			android:defaultValue="200" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/carrier_label_title" android:summary="@string/carrier_label_summary">
+		<PreferenceCategory android:title="@string/carrier_label_title" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:entries="@array/carrier_label_align_entries"
+			android:title="@string/carrier_label_align_title"
+			android:key="carrier_label_position"
+			android:defaultValue="1"
+			android:entryValues="@array/carrier_label_align_values" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:title="@string/carrier_label_toggle_title"
+			android:key="toggle_carrier_label_text"
+			android:summaryOn="@string/enable"
+			android:summaryOff="@string/disable" />
+		<com.wubydax.romcontrol.prefs.MyEditTextPreference
+			android:defaultValue="bamzzz"
+			android:key="carrier_label_text"
+			android:title="@string/carrier_label_text_title" />
+		<com.wubydax.romcontrol.prefs.ColorPickerPreference
+			android:title="@string/carrier_label_text_color_title"
+			android:key="carrier_label_text_color"
+			android:defaultValue="\#ff737373"
+			alphaSlider="true" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:icon="@null"
+			android:max="24"
+			android:title="@string/carrier_label_text_size_title"
+			android:key="carrier_label_text_size"
+			android:defaultValue="16"
+			min="8"
+			unitsRight="dip" />
+	</PreferenceScreen>
+
+	<com.wubydax.romcontrol.prefs.ColorPickerPreference
+		android:title="@string/notification_text_color_title"
+		android:key="pulldown_text"
+		android:defaultValue="\#8a000000"
+		alphaSlider="true" />
+	<com.wubydax.romcontrol.prefs.ColorPickerPreference
+		android:title="@string/quicksetting_button_color_title"
+		android:key="quicksetting_button_color"
+		android:defaultValue="\#ffffffff"
+		alphaSlider="true" />
+	<com.wubydax.romcontrol.prefs.ColorPickerPreference
+		android:title="@string/quicksetting_divider_color_title"
+		android:key="quicksetting_divider_color"
+		android:defaultValue="\#ff737373"
+		alphaSlider="true" />
+</PreferenceScreen>

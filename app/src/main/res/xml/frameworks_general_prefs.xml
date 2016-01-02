@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/listview_title" />
+	<com.wubydax.romcontrol.prefs.MyListPreference
+		android:entries="@array/listview_animation_entries"
+		android:title="@string/listview_animation_title"
+		android:key="listview_animation"
+		android:defaultValue="0"
+		android:entryValues="@array/listview_animation_values" />
+	<com.wubydax.romcontrol.prefs.MyListPreference
+		android:entries="@array/listview_interpolator_entries"
+		android:title="@string/listview_interpolator_title"
+		android:key="listview_interpolator"
+		android:defaultValue="0"
+		android:entryValues="@array/listview_interpolator_values" />
+
+	<PreferenceScreen android:title="@string/gesture_anywhere_title">
+		<SwitchPreference
+			android:key="gesture_anywhere_enabled"
+			android:title="@string/gesture_anywhere_enabled_title"
+			android:summary="@string/gesture_anywhere_enabled_summary"
+			android:defaultValue="false" />
+		<com.wubydax.romcontrol.prefs.MyListPreference
+			android:key="gesture_anywhere_position"
+			android:title="@string/gesture_anywhere_position_title"
+			android:entries="@array/gesture_anywhere_position_entries"
+			android:entryValues="@array/gesture_anywhere_position_values"
+			android:dependency="gesture_anywhere_enabled"/>
+		<!-- <PreferenceScreen
+				android:key="com.wubydax.romcontrol.chameleonos.labs.gestureanywhere.GestureAnywhereBuilderActivity"
+				android:summary="@string/gesture_anywhere_gestures_summary"
+				android:title="@string/gesture_anywhere_gestures_title" />-->
+		<PreferenceScreen
+			android:summary="@string/gesture_anywhere_gestures_summary"
+			android:title="@string/gesture_anywhere_gestures_title">
+			<intent
+				android:targetClass="com.wubydax.romcontrol.chameleonos.labs.gestureanywhere.GestureAnywhereBuilderActivity"
+				android:targetPackage="com.wubydax.romcontrol" />
+		</PreferenceScreen>
+
+		<PreferenceCategory android:title="@string/trigger_category" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:key="gesture_anywhere_trigger_width"
+			android:title="@string/trigger_width_title"
+			android:defaultValue="4"
+			android:max="64"
+			min="4"
+			unitsRight="px"
+			android:dependency="gesture_anywhere_enabled" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:key="gesture_anywhere_trigger_top"
+			android:title="@string/trigger_top_title"
+			android:defaultValue="0"
+			android:max="99"
+			min="0"
+			unitsRight="%"
+			android:dependency="gesture_anywhere_enabled" />
+		<com.wubydax.romcontrol.prefs.SeekBarPreference
+			android:key="gesture_anywhere_trigger_bottom"
+			android:title="@string/trigger_bottom_title"
+			android:defaultValue="100"
+			android:max="100"
+			min="1"
+			unitsRight="%"
+			android:dependency="gesture_anywhere_enabled" />
+	</PreferenceScreen>
+
+	<PreferenceCategory android:title="@string/power_menu_title" />
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="power_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_power_title" />
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="restart_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_restart_title" />
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="airplane_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_airplane_title" />
+	<!--	<SwitchPreference
+			android:defaultValue="false"
+			android:key="lockdown_in_power_menu"
+			android:summaryOff="@string/hide"
+			android:summaryOn="@string/show"
+			android:title="@string/power_menu_lockdown_title" />-->
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="settings_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_settings_title" />
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="screenshot_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_screenshot_title" />
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="flashlight_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_flashlight_title" />
+	<!--	<SwitchPreference
+			android:defaultValue="false"
+			android:key="bootloader_in_power_menu"
+			android:summaryOff="@string/hide"
+			android:summaryOn="@string/show"
+			android:title="@string/power_menu_bootloader_title" />-->
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="silent_in_power_menu"
+		android:summaryOff="@string/hide"
+		android:summaryOn="@string/show"
+		android:title="@string/power_menu_sound_title" />
+</PreferenceScreen>
